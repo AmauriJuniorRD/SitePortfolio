@@ -21,7 +21,7 @@ p {
   .rd-page-wrapper, .rd-preloader {
     width: 100%;
     height: 100vh;
-    display: block;
+    display: table;
     background-color: #1c1c1c;
     border: 30px solid #000;
   }
@@ -151,6 +151,18 @@ p {
       background: transparent url('../images/corner.svg') no-repeat;
     }
 
+                       /*home*/
+.rd-display-text{
+    margin-top: 15%;
+   }
+
+   #rd-home-presentation{
+     background-image: url('../images/logoHome.png');
+     background-repeat: no-repeat;
+     background-position: 70% 50%;
+     background-size: 45%;
+   }
+
 }
 
 @media screen and (min-width: 576px){
@@ -227,8 +239,12 @@ p {
   font-weight: normal;
 }
 
+.rd-title-big{
+  font-size: 120px;
+}
+
 .rd-text-green {
-  color: #2ccb69;
+  color: #00FF47;
 }
 
 .rd-text-dark {
@@ -300,10 +316,10 @@ p {
 
 .rd-full-height{
   height: 100vh;
-  background-color: blue;
-  border-bottom: 5px solid blue;
 }
-
+.rd-first-section{
+  height: calc(100vh - 30px);
+}
 /*CLASSES DE COMPORTAMENTO */
 .rd-is-open {
   display: block;
