@@ -16,6 +16,54 @@ p {
   }
 }
 
+@keyframes lineDown{
+  0% {
+    transform: scale(1, 0);
+    transform-origin: top center;
+  }
+
+  25% {
+    transform: scale(1, 1);
+    transform-origin: top center;
+  }
+
+  75% {
+    transform: scale(1, 1);
+    transform-origin: top center;
+  }
+
+  76% {
+    transform: scale(1, 1);
+    transform-origin: bottom center;
+  }
+
+  100% {
+    transform: scale(1, 0);
+    transform-origin: bottom center;
+  }
+}
+
+@keyframes arrowDown{
+  0% {
+    bottom: 25px;
+  }
+
+  25% {
+    bottom: 15px;
+    opacity: 1;
+  }
+
+  75% {
+    bottom: 10px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 0px;
+    opacity: 0;
+  }
+}
+
 @media screen and (min-width: 320px){
  
   .rd-page-wrapper, .rd-preloader {
@@ -41,8 +89,53 @@ p {
   .rd-preloader-inner {
     margin-top: -60px;
   }
+/* por enquanto estou na duvida se o layout ficou interesante com esse overlay
+  .rd-overlay {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 203, 105, 0.95);
+  }
+*/
+  .rd-modal {
+    width: 800px;
+    display: table;
+    padding: 30px;
+    border-radius: 0 30px 30px 30px;
+    position: fixed;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1200;
+  }
 
-  .rd-topbar{
+  .rd-modal-header {
+    width: 100%;
+    display: table;
+    position: relative;
+  }
+
+  .rd-close-modal {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: #2ccb69;
+    text-align: center;
+    line-height: center;
+    cursor: pointer;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border: none;
+    background-color: #2f2f2f;
+  }
+
+  .rd-topbar {
     width: 100%;
     height: 110px;
     display: block;
@@ -151,25 +244,74 @@ p {
       background: transparent url('../images/corner.svg') no-repeat;
     }
 
-                       /*home*/
+  /*------home----------*/
 .rd-display-text{
     margin-top: 15%;
    }
 
    #rd-home-presentation{
-     background-image: url('../images/logoHome.png');
+     background-image: url('../images/logoHomeSite.png');
      background-repeat: no-repeat;
-     background-position: 70% 50%;
-     background-size: 45%;
+     background-position: 80% 50%;
+     background-size: 50%;
    }
 
+   .rd-scroll-down{
+     width: 70px;
+     height: 105px;
+     border-radius: 35px 35px 0 0;
+     background-color: #2ccb69;
+     display: block;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     z-index: 100;
+   }
+
+    .rd-arrow-down{
+        width: 100%;
+        height: 75px;
+        display: table;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .rd-arrow-down img{
+      width: 16px;
+      height: 10px;
+      display: block;
+      position: absolute;
+      bottom: 25px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      opacity: 0;
+      animation: arrowDown 1.5s linear 1.5s infinite;
+    }
+
+    .rd-arrow-down:before {
+      content: ' ';
+      width: 2px;
+      height: 45px;
+      display: block;
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-color: #000;
+      animation: lineDown 1.5s ease-out infinite ;
+      transform-origin: top center;
+    }
 }
 
 @media screen and (min-width: 576px){
-  
 }
 
 @media screen and (min-width: 768px){
+
   
 }
 
@@ -244,7 +386,7 @@ p {
 }
 
 .rd-text-green {
-  color: #00FF47;
+  color: #2ccb69;
 }
 
 .rd-text-dark {
