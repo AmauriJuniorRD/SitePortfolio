@@ -6,7 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-p {
+p, label {
   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
@@ -114,7 +114,7 @@ p {
     z-index: 1200;
   }
 
-  .rd-modal-header {
+  .rd-modal-header, .rd-modal-body, .rd-form {
     width: 100%;
     display: table;
     position: relative;
@@ -133,6 +133,26 @@ p {
     right: -15px;
     border: none;
     background-color: #2f2f2f;
+  }
+
+  .rd-form label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .rd-field, .rd-textarea {
+    width: 100%;
+    background-color: #2f2f2f;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-indent: 15px;
+  } 
+
+  .rd-field {
+    height: 40px;
   }
 
   .rd-topbar {
@@ -373,6 +393,43 @@ p {
 @media screen and (min-width: 1600px){
   
 }
+
+/*Botoes*/
+.rd-btn-block {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+.rd-btn-small {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 20px;
+  border-radius: 14px;
+  font-size: 11px;
+}
+
+.rd-btn-medium {
+  height: 38px;
+  line-height: 38px;
+  padding: 0 20px;
+  border-radius: 19px;
+  font-size: 14px;
+}
+
+.rd-btn-large {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 35px;
+  border-radius: 23px;
+  font-size: 16px;
+}
+
+.rd-btn-green {
+  background-color: #2CCB69;
+  color: #1C1C1C;
+}
+
 
 /*Classes Utilitarias*/
 
