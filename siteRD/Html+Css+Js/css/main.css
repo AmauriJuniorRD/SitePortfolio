@@ -276,6 +276,13 @@ p, label {
      background-size: 50%;
    }
 
+   #rd-home-banner{
+    background-image: url('../images/rdequipe.png');
+    background-repeat: no-repeat;
+    background-position:90% 50%;
+    background-size: 65%;
+  }
+
    .rd-scroll-down{
      width: 70px;
      height: 105px;
@@ -518,6 +525,10 @@ p, label {
 }
 .rd-first-section{
   height: calc(100vh - 30px);
+}
+
+.rd-no-padding {
+  padding: 0  !important;
 }
 /*CLASSES DE COMPORTAMENTO */
 .rd-is-open {
