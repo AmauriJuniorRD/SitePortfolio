@@ -359,6 +359,10 @@ p, label {
      left: -75px;
  }
 
+ .rd-portfolio-list  .rd-portfolio-item-info {
+  width: calc(100% - 105px);
+ } 
+
  .rd-portfolio-list {
      list-style: none;
  }
@@ -376,7 +380,7 @@ p, label {
       float: right;
  }
 
- .rd-slider-list  .rd-portfolio-item-box, .rd-portfolio-list  .rd-portfolio-item-box{
+ .rd-slider-list  .rd-portfolio-item-box{
      width: 100%;
      height: 100%;
      display: block;
@@ -387,31 +391,59 @@ p, label {
      transform: scaleX(0);
      transform-origin: right;
  }
- .rd-portfolio-list  .rd-portfolio-item-box{
-      transform: scaleX(1);
- }
 
- .rd-slider-list  .rd-portfolio-item-thumb img, .rd-portfolio-list  .rd-portfolio-item-thumb img   {
-     width: 100%;
-     max-width: 100%;
-     height: auto;
-     position: relative;
-     left: -75px;
-     transform: scale(0)
- }
- .rd-portfolio-list  .rd-portfolio-item-thumb img{
-      transform: scale(1);
- }
+ .rd-portfolio-list  .rd-portfolio-item-box{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #2C2C2C;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ .rd-portfolio-list  .rd-portfolio-item-thumb img   {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  left: -75px;
+
+}
 
   /*----PORTFOLIO----*/
   .rd-section-offset-top {
       margin-top: 130px;
   }
 
-  .rd-portfolio-list  .rd-portfolio-item:nth-child(odd) {
- border-right: 8px solid red;
+  .rd-portfolio-list  .rd-portfolio-item:nth-child(odd) .rd-portfolio-item-info {
+    text-align: right;
+    margin-top: 70px;
 }
     
+.rd-portfolio-list  .rd-portfolio-item:nth-child(odd) .rd-portfolio-item-info div {
+  float:right;
+}
+
+.rd-portfolio-list  .rd-portfolio-item:nth-child(even) .rd-portfolio-item-info {
+ margin-top: 75px;
+  margin-left: 105px;
+}
+
+.rd-portfolio-list  .rd-portfolio-item:nth-child(even) > .row{
+  flex-direction: row-reverse;
+}
+
+.rd-portfolio-list  .rd-portfolio-item:nth-child(even) .rd-portfolio-item-thumb div {
+  float: left;
+  margin-left: 75px;
+}
+
+.rd-portfolio-list  .rd-portfolio-item:nth-child(even) .rd-portfolio-item-thumb img {
+  margin-top: -10px;
+  left: 130px;
+}
+
 }
 
 @media screen and (min-width: 576px){
@@ -486,6 +518,10 @@ p, label {
   display: block;
   width: 100%;
   border: none;
+}
+
+.rd-btn-border {
+  border: none
 }
 
 .rd-btn-small {
