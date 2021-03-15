@@ -426,7 +426,7 @@ p, label {
 }
 
 .rd-portfolio-list  .rd-portfolio-item:nth-child(even) .rd-portfolio-item-info {
- margin-top: 75px;
+ margin-top: 70px;
   margin-left: 105px;
 }
 
@@ -436,12 +436,11 @@ p, label {
 
 .rd-portfolio-list  .rd-portfolio-item:nth-child(even) .rd-portfolio-item-thumb div {
   float: left;
-  margin-left: 75px;
 }
 
 .rd-portfolio-list  .rd-portfolio-item:nth-child(even) .rd-portfolio-item-thumb img {
   margin-top: -10px;
-  left: 130px;
+  left: 75px;
 }
 
 }
