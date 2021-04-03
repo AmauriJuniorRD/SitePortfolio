@@ -5,7 +5,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*------login--------*/
+input {
+  display: block;
+  height: 55px;
+  width: 400px;
+  margin: 10px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
 
+div#rd-corpo-form {
+  width: 420px;
+  margin: 150px auto 0px auto;
+}
+
+/*---------------*/
 p, label {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
@@ -92,7 +107,7 @@ p, label {
   }
 
   .rd-modal {
-    width: 800px;
+    width: 400px;
     display: table;
     padding: 30px;
     border-radius: 0 30px 30px 30px;
@@ -263,6 +278,13 @@ p, label {
       right: 0;
       background: transparent url('../images/corner.svg') no-repeat;
     }
+
+    
+/*------login--------*/
+.rd-text-aling{
+  text-align: center;
+  
+}
 
   /*------home----------*/
 .rd-display-text{
@@ -454,8 +476,6 @@ p, label {
   left: 75px;
 }
 
-/*------Sobre--------*/
-
 
 }
 
@@ -561,6 +581,7 @@ p, label {
   font-size: 16px;
 }
 
+
 .rd-btn-green {
   background-color: #2CCB69;
   color: #1C1C1C;
@@ -648,7 +669,6 @@ p, label {
 .rd-mar-left-15 {
   margin-left: 15px;
 }
-
 
 .rd-pad-15 {
   padding: 15px;
