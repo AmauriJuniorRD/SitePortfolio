@@ -1,7 +1,6 @@
 //Declarando variáveis*
 var btnContact = document.querySelector('.rd-btn-contact');
 
-
 //Page preloader
 window.addEventListener('load', function () {
   var pagePreloder = document.querySelector('.rd-preloader');
@@ -21,6 +20,8 @@ btnContact.addEventListener('click', function () {
   this.classList.toggle('rd-change-icon');
 });
 
+
+
 //Animando elementos on scroll com waypoints
 var myScrollDown = document.querySelector('.rd-scroll-down');
 var waypoint = new Waypoint({
@@ -30,3 +31,4 @@ var waypoint = new Waypoint({
   },
   offset: '80%'
 });
+
