@@ -349,6 +349,11 @@ p, label {
     margin-top: 15%;
    }
 
+   .rd-display-parceiros{
+    margin-top: 8%;
+
+   }
+
    #rd-home-presentation{
      background-image: url('../images/logoHomeSite.png');
      background-repeat: no-repeat;
@@ -357,7 +362,7 @@ p, label {
      
    }
 
-   #rd-home-banner{
+   #rd-home-banner {
     background-image: url('../images/rdequipe.png');
     background-repeat: no-repeat;
     background-position:90% 50%;
@@ -367,8 +372,15 @@ p, label {
   #rd-home-venda{
     background-image: url('../images/rd-preloader.png');
     background-repeat: no-repeat;
-    background-position:80% 50%;
+    background-position: 80% 50%;
     background-size: 40%;
+  }
+
+  #rd-home-patrocinador{
+    background-image: url('../images/patrocinador.png');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 30%;
   }
 
    .rd-scroll-down{
