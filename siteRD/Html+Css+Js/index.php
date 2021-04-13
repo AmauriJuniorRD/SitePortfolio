@@ -46,7 +46,7 @@ $u = new Usuario();
 
     if (!empty($email) && !empty($senha)) {
 
-      $u->conectar("projeto_login", "localhost", "root", "");
+      $u->conectar("rdgames", "localhost", "root", "");
 
       if ($u->msgError == "") {
 
