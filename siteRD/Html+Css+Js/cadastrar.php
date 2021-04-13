@@ -31,6 +31,10 @@ $u = new Usuario();
           <input class="rd-btn rd-btn-large  rd-btn-border" type="password" name="senha" placeholder="Senha" maxlength="15">
           <input class="rd-btn rd-btn-large  rd-btn-border" type="password" name="confSenha" placeholder="Confirmar Senha" maxlength="15">
           <input class="rd-btn rd-btn-large rd-btn-green rd-btn-border" type="submit" value="Cadastrar">
+          <p class=" rd-text-light rd-text-aling">Já se cadastrou? <a class=" rd-text-light rd-text-decoration " href="index.php">
+              <strong class=" rd-text-green">Entrar</strong></a></p>
+
+
 
         </form>
       </div>
@@ -48,7 +52,7 @@ $u = new Usuario();
 
     if (!empty($nome) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($conf_senha)) {
 
-      $u->conectar("projeto_login", "localhost", "root", "");
+      $u->conectar("rdgames", "localhost", "root", "");
 
 
       if ($senha == $conf_senha) {
