@@ -23,7 +23,7 @@
     <a href="sobre.html">Sobre</a>
     <a href="projetos.html">Projetos</a>
     <a href="equipe.html">Equipe</a>
-    <a href="fandon.html">Fandon</a>
+    <a href="game.php">Fandon</a>
     <a href="parceria.php">Parcerias</a>
   </nav>
 
@@ -32,7 +32,7 @@
     <a href="sobre.html">Sobre</a>
     <a href="projetos.html">Projetos</a>
     <a href="equipe.html">Equipe</a>
-    <a href="fandon.html">Fandon</a>
+    <a href="game.php">Fandon</a>
     <a href="parceria.php">Parcerias</a>
   </nav>
 </header>
@@ -86,7 +86,7 @@
       <?php
       while ($row = $result->fetch_assoc()) : ?>
         <tr>
-          <td class=" rd-btn-large rd-subs-crud rd-text-light "><?php echo $row['nome']; ?></td>
+          <td class="rd-btn-large rd-subs-crud rd-text-light "><?php echo $row['nome']; ?></td>
           <td class="rd-btn-large rd-subs-crud rd-text-light "><?php echo $row['idade']; ?></td>
           <td class="rd-btn-large rd-subs-crud rd-text-light "><?php echo $row['jogosrd']; ?></td>
           <td>
