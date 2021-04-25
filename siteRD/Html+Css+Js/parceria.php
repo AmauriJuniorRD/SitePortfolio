@@ -29,7 +29,7 @@ $u = new Patrocinio();
       <a href="sobre.html">Sobre</a>
       <a href="projetos.html">Projetos</a>
       <a href="equipe.html">Equipe</a>
-      <a href="fandon.html">Fandon</a>
+      <a href="game.php">Fandon</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
 
@@ -38,7 +38,7 @@ $u = new Patrocinio();
       <a href="sobre.html">Sobre</a>
       <a href="projetos.html">Projetos</a>
       <a href="equipe.html">Equipe</a>
-      <a href="fandon.html">Fandon</a>
+      <a href="game.php">Fandon</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
   </header>
@@ -138,4 +138,4 @@ $u = new Patrocinio();
   <script src="js/anime.js"></script>
 </body>
 
-</html> 
+</html>
