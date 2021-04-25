@@ -169,6 +169,16 @@ p, label {
     text-indent: 15px;
   } 
 
+  .rd-textcrud {
+    width: 30%;
+    background-color: #2f2f2f;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-indent: 15px;
+  } 
+
   .rd-field {
     height: 40px;
   }
@@ -344,14 +354,18 @@ p, label {
   
 }
 
+
   /*------home----------*/
 .rd-display-text{
     margin-top: 15%;
    }
 
+  .rd-game-text{
+    margin-top: 10%;
+   }
+
    .rd-display-parceiros{
     margin-top: 8%;
-
    }
 
    #rd-home-presentation{
@@ -628,6 +642,7 @@ p, label {
 }
 
 /*Botoes*/
+
 .rd-btn-block {
   display: block;
   width: 100%;
@@ -674,6 +689,17 @@ p, label {
   transform: scale(1.1);
 }
 
+.rd-btn-red {
+  background-color: #870617;
+  color: #1C1C1C;
+}
+
+.rd-btn-red:hover {
+  background-color: #66042d;
+  color: #fff;
+  transform: scale(1.1);
+}
+
 /*Classes Utilitarias*/
 
 .rd-title {
@@ -683,6 +709,10 @@ p, label {
 
 .rd-title-large{
   font-size: 50px;
+}
+
+.rd-subs-crud{
+  font-size: 30px;
 }
 
 .rd-title-big{
