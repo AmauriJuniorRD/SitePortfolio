@@ -90,6 +90,15 @@ p, label {
     border: 30px solid #000;
   }
 
+  /*Isto é apenas um teste*/
+  .rd-page-wrapper-teste{
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background-image: url('../images/live.jpg');
+    border: 30px solid #000;
+  }
+/*----------------------------------*/
   .rd-preloader{
     display:flex;
     flex-direction: row;
@@ -258,7 +267,11 @@ p, label {
     .rd-menu-mob a:hover:before {
       transform: scale(1, 1);
     }
+
+    
 /*-----------------------------*/
+
+
     .rd-btn-contact {
       width: 45px;
       height: 45px;
@@ -366,6 +379,10 @@ p, label {
 
    .rd-display-parceiros{
     margin-top: 8%;
+   }
+   
+   .rd-display-crud {
+    margin-top: 5%;
    }
 
    #rd-home-presentation{
@@ -586,6 +603,7 @@ p, label {
     margin-left: 30px;
   }
 
+
   .rd-menu-mob {
     display: none;
   }
@@ -650,7 +668,7 @@ p, label {
 }
 
 .rd-btn-border {
-  border: none
+  border: none;
 }
 
 .rd-btn-small {
@@ -677,10 +695,37 @@ p, label {
   font-size: 16px;
 }
 
+.rd-btn-recrut {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 60px;
+  border-radius: 23px;
+  font-size: 16px;
+}
+
+.rd-btn-crud {
+  height: 60px;
+  line-height: 30px;
+  padding: 0 35px;
+  border-radius: 23px;
+  font-size: 20px;
+  border: none;
+}
 
 .rd-btn-green {
   background-color: #2CCB69;
   color: #1C1C1C;
+}
+
+.rd-btn-blue {
+  background-color: #1908ff;
+  color: #1C1C1C;
+}
+
+.rd-btn-blue:hover {
+  background-color: #042666;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .rd-btn-green:hover {
@@ -715,6 +760,10 @@ p, label {
   font-size: 30px;
 }
 
+.rd-title-recrut {
+  font-size: 25px;
+}
+
 .rd-title-big{
   font-size: 120px;
 }
@@ -742,6 +791,11 @@ p, label {
 .rd-text-black {
   color: #000;
 }
+
+.rd-text-blue {
+  color: #1908ff;
+}
+
 .rd-text-decoration {
   text-decoration: none;
 }
@@ -779,6 +833,10 @@ p, label {
 
 .rd-mar-left-15 {
   margin-left: 15px;
+}
+
+.rd-mar-recrut {
+  margin-left: 70px;
 }
 
 .rd-pad-15 {
@@ -836,3 +894,79 @@ p, label {
 .rd-fade-out {
   animation: fadeOut 2s forwards ease-out;
 }
+
+/* teste para menu responsivo*/
+.rd-teste {
+
+  height: 5px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin-left: 1500px;
+  margin-top: 15px;
+}
+
+.rd-ul li a
+{
+	color: #fff;
+	text-decoration: none;
+  
+}
+
+.rd-ul li
+{
+	list-style: none;
+	padding: 16px 0;
+}
+.rd-ul
+{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+  margin-left: 1500px;
+  margin-top: 15px;
+}
+.menu-bg, #menu-bar {
+	top:0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background:rgb(124, 123, 123);
+	border-radius: 10%;
+	transition: 0.3s ease;
+  margin-left: 1550px;
+  margin-top: 15px;
+}
+#menu-bar{
+	z-index:2;
+
+}
+.change-bg
+{
+	width: 200px;
+	height: 520px;
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar2{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar3{
+	opacity: 0;
+}
+.change{
+	display: block;
+} 
+/*----------------------*/
