@@ -71,27 +71,35 @@
   $result = $mysqli->query("SELECT * FROM game") or die($mysql->error);
 
   ?>
-  <div class="row justify-content-left rd-display-parceiros">
+  <div class="row justify-content-center rd-display-parceiros rd-text-light col-sm-12 col-md-6 offset-md-3">
+    <h1 class="rd-title rd-title-large rd-text-green">Gamer</h1>
+    <p class="rd-text-subs">
+      Deixe aqui qual é seu game favorito de nossa franquia, desta forma você nos ajuda a saber qual é
+      o estilo de game que está mais agradando a todos, e você pode fazer novos amigos aqui para jogar!!!
+    </p>
+  </div>
+  <hr class="rd-display-crud" width=“2” size=“100”>
+  <div class="row justify-content-center rd-display-crud">
     <table class="table">
       <thead>
         <tr>
 
-          <th class=" rd-btn-large rd-title-large rd-text-light ">Nome</th>
-          <th class=" rd-btn-large rd-title-large rd-text-light ">Idade</th>
-          <th class="rd-btn-large rd-title-large rd-text-light ">Game Favorito</th>
-          <th class="rd-btn-large rd-title-large rd-text-light " colspan="2">Ações</th>
+          <th class="rd-btn-recrut rd-title-large rd-text-light "> Nome</th>
+          <th class="rd-btn-recrut rd-title-large rd-text-light ">Idade</th>
+          <th class="rd-btn-recrut rd-title-large rd-text-light ">Game Favorito</th>
+          <th class="rd-btn-recrut rd-title-large rd-text-light " colspan="2">Ações</th>
         </tr>
       </thead>
 
       <?php
       while ($row = $result->fetch_assoc()) : ?>
         <tr>
-          <td class="rd-btn-large rd-subs-crud rd-text-light "><?php echo $row['nome']; ?></td>
-          <td class="rd-btn-large rd-subs-crud rd-text-light "><?php echo $row['idade']; ?></td>
-          <td class="rd-btn-large rd-subs-crud rd-text-light "><?php echo $row['jogosrd']; ?></td>
+          <td class="rd-btn-recrut rd-subs-crud rd-text-light "><?php echo $row['nome']; ?></td>
+          <td class="rd-btn-recrut rd-subs-crud rd-text-light "><?php echo $row['idade']; ?></td>
+          <td class="rd-btn-recrut rd-subs-crud rd-text-light "><?php echo $row['jogosrd']; ?></td>
           <td>
-            <a href="game.php?edit=<?php echo $row['id_usuario']; ?> " class="rd-text-decoration  rd-btn-large rd-btn-green rd-btn-border">Editar</a>
-            <a href="gameprocess.php?delete=<?php echo $row['id_usuario']; ?> " class="rd-text-decoration rd-btn rd-btn-large rd-btn-red rd-btn-border">Deletar</a>
+            <a href="game.php?edit=<?php echo $row['id_usuario']; ?> " class="rd-text-decoration rd-btn-crud rd-btn-blue ">Editar</a>
+            <a href="gameprocess.php?delete=<?php echo $row['id_usuario']; ?> " class="rd-text-decoration rd-btn rd-btn-crud rd-btn-red">Deletar</a>
           </td>
         </tr>
       <?php endwhile; ?>
@@ -108,13 +116,18 @@
   }
 
   ?>
-
+  <hr class="rd-display-crud" width=“2” size=“100”>
   <div class="row justify-content-center rd-display-parceiros">
     <form action="gameprocess.php" method="POST">
       <input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
-
+      <?php
+      if ($update == true) :
+      ?>
+        <h2 class="rd-text-blue row justify-content-center">Atualize seus dados</h2>
+      <?php else : ?>
+        <h2 class=" rd-text-green row justify-content-center">Insira seus dados</h2>
+      <?php endif ?>
       <div class="form-group">
-
         <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="nome" value="<?php echo $nome; ?>" placeholder="Nome" maxlength="30">
       </div>
 
@@ -128,9 +141,13 @@
         <?php
         if ($update == true) :
         ?>
-          <button class="rd-mar-left-15 rd-btn rd-btn-large rd-btn-green rd-btn-border " type="submit" name="update">Atualizar</button>
+          <div class="row justify-content-center rd-mar-top-15 rd-mar-bottom-15">
+            <button class="rd-btn rd-btn-large rd-btn-blue rd-btn-border" type="submit" name="update">Atualizar</button>
+          </div>
         <?php else : ?>
-          <button class="rd-mar-left-15 rd-btn rd-btn-large rd-btn-green rd-btn-border " type="submit" name="save">Salvar</button>
+          <div class="row justify-content-center rd-mar-top-15 rd-mar-bottom-15">
+            <button class="rd-btn rd-btn-large rd-btn-green rd-btn-border" type="submit" name="save">Cadastrar</button>
+          </div>
         <?php endif ?>
       </div>
     </form>
