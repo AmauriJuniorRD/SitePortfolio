@@ -29,16 +29,17 @@ $u = new Patrocinio();
       <a href="sobre.html">Sobre</a>
       <a href="projetos.html">Projetos</a>
       <a href="equipe.html">Equipe</a>
-      <a href="game.php">Fandon</a>
+      <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
+
 
     <nav class="rd-menu-mob">
       <a href="home.html">Home</a>
       <a href="sobre.html">Sobre</a>
       <a href="projetos.html">Projetos</a>
       <a href="equipe.html">Equipe</a>
-      <a href="game.php">Fandon</a>
+      <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
   </header>
@@ -122,15 +123,12 @@ $u = new Patrocinio();
 
       $u->conectar("rdgames", "localhost", "root", "");
 
-
       if ($u->cadastrar($nome, $telefone, $email, $pedido)) {
       }
     }
   }
 
   ?>
-
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
