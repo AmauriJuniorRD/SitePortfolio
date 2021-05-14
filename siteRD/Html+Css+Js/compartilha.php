@@ -23,7 +23,7 @@
     <a href="sobre.html">Sobre</a>
     <a href="projetos.html">Projetos</a>
     <a href="equipe.html">Equipe</a>
-    <a href="game.php">Fandon</a>
+    <a href="dev.php">Devs</a>
     <a href="parceria.php">Parcerias</a>
   </nav>
 
@@ -32,7 +32,7 @@
     <a href="sobre.html">Sobre</a>
     <a href="projetos.html">Projetos</a>
     <a href="equipe.html">Equipe</a>
-    <a href="game.php">Fandon</a>
+    <a href="dev.php">Devs</a>
     <a href="parceria.php">Parcerias</a>
   </nav>
 </header>
@@ -55,14 +55,11 @@
     </div>
   </div>
   <div class="rd-corner">
-
   </div>
-
 </div>
+
 <button class="rd-btn-contact">
-
 </button>
-
 
 <div class="rd-page-wrapper ">
 
@@ -107,7 +104,6 @@
     </table>
   </div>
 
-
   <?php
   function pre_r($array)
   {
@@ -117,6 +113,7 @@
   }
 
   ?>
+
   <hr class="rd-display-crud" width=“2” size=“100”>
   <div class="row justify-content-center rd-display-parceiros">
     <form action="compartilhaprocess.php" method="POST">
