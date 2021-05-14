@@ -18,7 +18,6 @@ $u = new Usuario();
 </head>
 
 <body>
-
   <div class="rd-page-wrapper ">
     <div class="rd-modal-login rd-bg-black ">
       <div class="rd-modal-body  ">
@@ -34,14 +33,12 @@ $u = new Usuario();
           <p class=" rd-text-light rd-text-aling">Já se cadastrou? <a class=" rd-text-light rd-text-decoration " href="index.php">
               <strong class=" rd-text-green">Entrar</strong></a></p>
 
-
-
         </form>
       </div>
     </div>
   </div>
-
   <?php
+
   if (isset($_POST['nome'])) {
 
     $nome = addslashes($_POST['nome']);
@@ -53,7 +50,6 @@ $u = new Usuario();
     if (!empty($nome) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($conf_senha)) {
 
       $u->conectar("rdgames", "localhost", "root", "");
-
 
       if ($senha == $conf_senha) {
 
@@ -71,11 +67,7 @@ $u = new Usuario();
   } else {
     echo "Preencha todos os campos";
   }
-
-
-
   ?>
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
