@@ -23,7 +23,7 @@
     <a href="sobre.html">Sobre</a>
     <a href="projetos.html">Projetos</a>
     <a href="equipe.html">Equipe</a>
-    <a href="game.php">Fandon</a>
+    <a href="dev.php">Devs</a>
     <a href="parceria.php">Parcerias</a>
   </nav>
 
@@ -32,7 +32,7 @@
     <a href="sobre.html">Sobre</a>
     <a href="projetos.html">Projetos</a>
     <a href="equipe.html">Equipe</a>
-    <a href="game.php">Fandon</a>
+    <a href="dev.php">Devs</a>
     <a href="parceria.php">Parcerias</a>
   </nav>
 </header>
@@ -60,9 +60,7 @@
 
 </div>
 <button class="rd-btn-contact">
-
 </button>
-
 
 <div class="rd-page-wrapper ">
 
@@ -83,7 +81,6 @@
     <table class="table">
       <thead>
         <tr>
-
           <th class="rd-btn-recrut rd-title-large rd-text-light "> Nome</th>
           <th class="rd-btn-recrut rd-title-large rd-text-light ">Idade</th>
           <th class="rd-btn-recrut rd-title-large rd-text-light ">Game Favorito</th>
@@ -105,7 +102,6 @@
       <?php endwhile; ?>
     </table>
   </div>
-
 
   <?php
   function pre_r($array)
