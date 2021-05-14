@@ -81,7 +81,8 @@ p, label {
 }
 
 @media screen and (min-width: 320px){
- 
+
+
   .rd-page-wrapper, .rd-preloader {
     width: 100%;
     height: 100vh;
@@ -116,7 +117,7 @@ p, label {
   }
 
   .rd-modal {
-    width: 800px;
+    width: 80%;
     display: table;
     padding: 30px;
     border-radius: 0 30px 30px 30px;
@@ -218,17 +219,19 @@ p, label {
     display: block;
     margin: 55px auto 0;
   }
-
     .rd-menu {
       display: none;
     }
+
 /*Menu mobile*/
     .rd-menu-mob {
     display: table;
     float: left;
     height: 110px;
-    margin-left: 80px;
+    margin-left: 20px;
+    background-color: #2f2f2fa8;
     }
+
 
     .rd-menu-mob a {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -237,9 +240,10 @@ p, label {
       text-transform: lowercase;
       text-decoration: none;
       display: inline-block;
-      margin: 50px 20px 0 20px;
+      margin: 50px 5px 0 20px;
       font-weight: 400;
       position: relative;
+
     }
   
     .rd-menu-mob a:first-child {
@@ -384,35 +388,6 @@ p, label {
    .rd-display-crud {
     margin-top: 5%;
    }
-
-   #rd-home-presentation{
-     background-image: url('../images/logoHomeSite.png');
-     background-repeat: no-repeat;
-     background-position: 80% 50%;
-     background-size: 50%;
-     
-   }
-
-   #rd-home-banner {
-    background-image: url('../images/rdequipe.png');
-    background-repeat: no-repeat;
-    background-position:90% 50%;
-    background-size: 65%;
-  }
-
-  #rd-home-venda{
-    background-image: url('../images/rd-preloader.png');
-    background-repeat: no-repeat;
-    background-position: 80% 50%;
-    background-size: 40%;
-  }
-
-  #rd-home-patrocinador{
-    background-image: url('../images/patrocinador.png');
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    background-size: 30%;
-  }
 
    .rd-scroll-down{
      width: 70px;
@@ -645,6 +620,44 @@ p, label {
   .rd-menu a:hover:before {
     transform: scale(1, 1);
   }
+
+  #rd-home-presentation{
+    background-image: url('../images/logoHomeSite.png');
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    background-size: 50%;
+    
+  }
+
+  #rd-home-banner {
+   background-image: url('../images/rdequipe.png');
+   background-repeat: no-repeat;
+   background-position:90% 50%;
+   background-size: 65%;
+ }
+
+ #rd-home-venda{
+   background-image: url('../images/rd-preloader.png');
+   background-repeat: no-repeat;
+   background-position: 80% 50%;
+   background-size: 40%;
+ }
+
+ #rd-home-patrocinador{
+   background-image: url('../images/patrocinador.png');
+   background-repeat: no-repeat;
+   background-position: 90% 50%;
+   background-size: 30%;
+ }
+
+ #rd-crud-manete{
+   background-image: url('../images/manete.png');
+   background-repeat: no-repeat;
+   background-position: 90% -25%;
+   background-size: 40%;
+   
+ }
+
 }
 
 @media screen and (min-width: 1200px){
@@ -745,6 +758,16 @@ p, label {
   transform: scale(1.1);
 }
 
+.rd-btn-clear {
+  background-color: #959595;
+  color: #000;
+}
+
+.rd-btn-clear:hover {
+  background-color: rgb(61, 61, 61);
+  color: #000;
+  transform: scale(1.1);
+}
 /*Classes Utilitarias*/
 
 .rd-title {
