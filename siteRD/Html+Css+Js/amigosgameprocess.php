@@ -22,6 +22,7 @@ if (isset($_POST['save'])) {
 
   header("location: amigosgame.php");
 }
+
 if (isset($_GET['delete'])) {
   $id_usuario = $_GET['delete'];
   $mysqli->query("DELETE FROM amigosgame WHERE id_usuario=$id_usuario") or die($mysqli->erro);
