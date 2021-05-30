@@ -124,14 +124,14 @@
         <h2 class=" rd-text-green row justify-content-center">Insira seus dados</h2>
       <?php endif ?>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="nome" value="<?php echo $nome; ?>" placeholder="Nome" maxlength="30">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="nome" value="<?php echo $nome; ?>" placeholder="Nome" maxlength="30" required>
       </div>
 
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="idade" value="<?php echo $idade; ?>" placeholder="Idade" maxlength="10">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="idade" value="<?php echo $idade; ?>" placeholder="Idade" maxlength="10" required>
       </div>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="jogosrd" value="<?php echo $jogosrd; ?>" placeholder="Game Favorito" maxlength="20">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="jogosrd" value="<?php echo $jogosrd; ?>" placeholder="Game Favorito" maxlength="20" required>
       </div>
       <div class="form-group">
         <?php
