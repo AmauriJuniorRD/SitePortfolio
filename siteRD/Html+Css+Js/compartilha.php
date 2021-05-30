@@ -69,7 +69,7 @@
 
   ?>
   <div class="row justify-content-center rd-display-parceiros rd-text-light col-sm-12 col-md-6 offset-md-3">
-    <h1 class="rd-title rd-title-large rd-text-green">Developer Indie</h1>
+    <h1 class="rd-title rd-title-large rd-text-green">Desenvolvedor Indie</h1>
     <p class="rd-text-subs">
       Aqui você que é desenvolvedor indei pode compartilhar os links de seu game,
       podendo divulgar seus serviços e atingindo um público maior para seu game, e
@@ -126,14 +126,14 @@
         <h2 class=" rd-text-green row justify-content-center">Insira seus dados</h2>
       <?php endif ?>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="equipe" value="<?php echo $equipe; ?>" placeholder="Equipe" maxlength="30">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="equipe" value="<?php echo $equipe; ?>" placeholder="Equipe" maxlength="30" required>
       </div>
 
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="data_lanc" value="<?php echo $data_lanc; ?>" placeholder="Data de lançamento" maxlength="30">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="data_lanc" value="<?php echo $data_lanc; ?>" placeholder="Data de lançamento" maxlength="30" required>
       </div>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="link" value="<?php echo $link; ?>" placeholder="Link" maxlength="400">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="link" value="<?php echo $link; ?>" placeholder="Link" maxlength="400" required>
       </div>
       <div class="form-group">
         <?php
@@ -145,8 +145,10 @@
         <?php else : ?>
           <div class="row justify-content-center rd-mar-top-15 rd-mar-bottom-15">
             <button class="rd-btn rd-btn-large rd-btn-green rd-btn-border" type="submit" name="save">Cadastrar</button>
+
           </div>
         <?php endif ?>
+
       </div>
     </form>
   </div>
