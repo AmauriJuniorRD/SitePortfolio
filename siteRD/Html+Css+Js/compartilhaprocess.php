@@ -20,6 +20,7 @@ if (isset($_POST['save'])) {
 
   header("location: compartilha.php");
 }
+
 if (isset($_GET['delete'])) {
   $id_usuario = $_GET['delete'];
   $mysqli->query("DELETE FROM compartilha WHERE id_usuario=$id_usuario") or die($mysqli->erro);
