@@ -132,16 +132,16 @@
         <h2 class=" rd-text-green row justify-content-center">Insira seus dados</h2>
       <?php endif ?>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="nome" value="<?php echo $nome; ?>" placeholder="Nome" maxlength="30">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="nome" value="<?php echo $nome; ?>" placeholder="Nome" maxlength="30 " required>
       </div>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="nick" value="<?php echo $nick; ?>" placeholder="Nick" maxlength="30">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="nick" value="<?php echo $nick; ?>" placeholder="Nick" maxlength="30" required>
       </div>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="game" value="<?php echo $game; ?>" placeholder="Game" maxlength="40">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="game" value="<?php echo $game; ?>" placeholder="Game" maxlength="40" required>
       </div>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="plataforma" value="<?php echo $plataforma; ?>" placeholder="Plataforma" maxlength="40">
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="plataforma" value="<?php echo $plataforma; ?>" placeholder="Plataforma" maxlength="40" required>
       </div>
       <div class="form-group">
         <?php
