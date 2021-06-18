@@ -4,6 +4,11 @@ require_once '../CLASSE/vendas.php';
 $u = new venda();
 ?>
 
+<?php
+include("protect.php");
+protect();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -51,7 +56,7 @@ $u = new venda();
             <input class="rd-btn rd-btn-large rd-btn-green rd-btn-border" type="submit" value="Vender">
 
           </div>
-          <p class=" rd-text-light rd-text-aling">Já nos mandou seu game? <a class=" rd-text-light rd-text-decoration " href="home.html">
+          <p class=" rd-text-light rd-text-aling">Já nos mandou seu game? <a class=" rd-text-light rd-text-decoration " href="home.php">
               <strong class=" rd-text-green">Retornar</strong></a></p>
 
 
