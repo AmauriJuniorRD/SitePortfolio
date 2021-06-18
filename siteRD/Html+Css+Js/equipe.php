@@ -1,3 +1,8 @@
+<?php
+include("protect.php");
+protect();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,19 +25,21 @@
       <img src="images/logo.svg" alt="logo Reborn Dream" />
     </div>
     <nav class="rd-menu">
-      <a href="home.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="equipe.html">Equipe</a>
+      <a href="home.php">Home</a>
+      <a href="sobre.php">Sobre</a>
+      <a href="projetos.php">Projetos</a>
+      <a href="equipe.php">Equipe</a>
       <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
 
+    <nav> <a href="logout.php" class="rd-text-decoration"> <button class="rd-btn rd-btn-logout rd-btn-red ">Logout</button> </a></nav>
+
     <nav class="rd-menu-mob">
-      <a href="home.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="equipe.html">Equipe</a>
+      <a href="home.php">Home</a>
+      <a href="sobre.php">Sobre</a>
+      <a href="projetos.php">Projetos</a>
+      <a href="equipe.php">Equipe</a>
       <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
@@ -90,8 +97,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/amauriRD.png" alt="Amauri Junior" title="Amauri Junior" data-aos="flip-left"
-                      data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/amauriRD.png" alt="Amauri Junior" title="Amauri Junior" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
@@ -122,8 +128,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/hudsonRD.png" alt="Hudson Lucas" title="Hudson Lucas" data-aos="flip-left"
-                      data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/hudsonRD.png" alt="Hudson Lucas" title="Hudson Lucas" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
@@ -142,9 +147,7 @@
                     </p>
                     <div class="row rd-mar-top-15">
                       <div class="col-sm-12 col-md-6">
-                        <a href="https://www.instagram.com/billiontharc00.lcfo/" target="_blank"
-                          class="rd-text-decoration"> <button
-                            class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Instagram</button> </a>
+                        <a href="https://www.instagram.com/billiontharc00.lcfo/" target="_blank" class="rd-text-decoration"> <button class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Instagram</button> </a>
                       </div>
                     </div>
                   </div>
@@ -152,8 +155,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/luizRD.jpg" alt="Luiz Claudio" title="Luiz Claudio" data-aos="flip-left"
-                      data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/luizRD.jpg" alt="Luiz Claudio" title="Luiz Claudio" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
