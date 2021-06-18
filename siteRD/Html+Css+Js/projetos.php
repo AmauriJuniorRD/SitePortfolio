@@ -1,3 +1,8 @@
+<?php
+include("protect.php");
+protect();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -21,20 +26,21 @@
       <img src="images/logo.svg" alt="logo Reborn Dream" />
     </div>
     <nav class="rd-menu">
-      <a href="home.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="equipe.html">Equipe</a>
+      <a href="home.php">Home</a>
+      <a href="sobre.php">Sobre</a>
+      <a href="projetos.php">Projetos</a>
+      <a href="equipe.php">Equipe</a>
       <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
 
+    <nav> <a href="logout.php" class="rd-text-decoration"> <button class="rd-btn rd-btn-logout rd-btn-red ">Logout</button> </a></nav>
 
     <nav class="rd-menu-mob">
-      <a href="home.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="equipe.html">Equipe</a>
+      <a href="home.php">Home</a>
+      <a href="sobre.php">Sobre</a>
+      <a href="projetos.php">Projetos</a>
+      <a href="equipe.php">Equipe</a>
       <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
@@ -80,9 +86,7 @@
                       O que você ta esperando,‘caçar coisas , matar coisas o negocio da família’.</p>
                     <div class="row rd-mar-top-15">
                       <div class="col-sm-12 col-md-6">
-                        <a href="https://m.apkpure.com/br/quiz-sobrenatural/com.PlayerBrotherGames.QuizSobrenatural"
-                          target="_blank" class="rd-text-decoration"> <button
-                            class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
+                        <a href="https://m.apkpure.com/br/quiz-sobrenatural/com.PlayerBrotherGames.QuizSobrenatural" target="_blank" class="rd-text-decoration"> <button class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
                       </div>
                     </div>
                   </div>
@@ -90,8 +94,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/sobrenatural.png" alt="QuizSobrenatural" title="QuizSobrenatura"
-                      data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/sobrenatural.png" alt="QuizSobrenatural" title="QuizSobrenatura" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
@@ -109,9 +112,7 @@
                     </p>
                     <div class="row rd-mar-top-15">
                       <div class="col-sm-12 col-md-6">
-                        <a href="https://reborn-dream.itch.io/quiz-sobre-free-fire" target="_blank"
-                          class="rd-text-decoration"> <button
-                            class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
+                        <a href="https://reborn-dream.itch.io/quiz-sobre-free-fire" target="_blank" class="rd-text-decoration"> <button class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
                       </div>
                     </div>
                   </div>
@@ -119,8 +120,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/Free fire.png" alt=" Quiz Free Fire" title="Quiz Free Fire" data-aos="flip-left"
-                      data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/Free fire.png" alt=" Quiz Free Fire" title="Quiz Free Fire" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
@@ -137,9 +137,7 @@
                     </p>
                     <div class="row rd-mar-top-15">
                       <div class="col-sm-12 col-md-6">
-                        <a href="https://m.apkpure.com/br/quiz-b%C3%ADblico/com.RebornDream.QuizBiblico" target="_blank"
-                          class="rd-text-decoration"> <button
-                            class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
+                        <a href="https://m.apkpure.com/br/quiz-b%C3%ADblico/com.RebornDream.QuizBiblico" target="_blank" class="rd-text-decoration"> <button class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
                       </div>
                     </div>
                   </div>
@@ -147,8 +145,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/Biblico.png" alt="Quiz Biblico" title="Quiz Biblico" data-aos="flip-left"
-                      data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/Biblico.png" alt="Quiz Biblico" title="Quiz Biblico" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
@@ -168,9 +165,7 @@
                     </p>
                     <div class="row rd-mar-top-15">
                       <div class="col-sm-12 col-md-6">
-                        <a href="https://reborn-dream.itch.io/enem-nota-1000" target="_blank"
-                          class="rd-text-decoration"> <button
-                            class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
+                        <a href="https://reborn-dream.itch.io/enem-nota-1000" target="_blank" class="rd-text-decoration"> <button class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
                       </div>
                     </div>
                   </div>
@@ -178,8 +173,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/enem.png" alt="Quiz Enem" title="Quiz Enem" data-aos="flip-left"
-                      data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/enem.png" alt="Quiz Enem" title="Quiz Enem" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
@@ -208,8 +202,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/loud.png" alt="Quiz Loud" title="Quiz Loud" data-aos="flip-left"
-                      data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/loud.png" alt="Quiz Loud" title="Quiz Loud" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
@@ -230,8 +223,7 @@
                     </p>
                     <div class="row rd-mar-top-15">
                       <div class="col-sm-12 col-md-6">
-                        <a href="https://reborn-dream.itch.io/guia-sobre-coronavirus" target="_blank"
-                          class="rd-text-decoration">
+                        <a href="https://reborn-dream.itch.io/guia-sobre-coronavirus" target="_blank" class="rd-text-decoration">
                           <button class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
                       </div>
                     </div>
@@ -240,8 +232,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/Corona.png" alt="Guia sobre coronavirus" title="Guia sobre coronavirus"
-                      data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/Corona.png" alt="Guia sobre coronavirus" title="Guia sobre coronavirus" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
@@ -261,8 +252,7 @@
                     </p>
                     <div class="row rd-mar-top-15">
                       <div class="col-sm-12 col-md-6">
-                        <a href="https://m.apkpure.com/br/tijolinho/com.RebornDream.Tijolinho" target="_blank"
-                          class="rd-text-decoration">
+                        <a href="https://m.apkpure.com/br/tijolinho/com.RebornDream.Tijolinho" target="_blank" class="rd-text-decoration">
                           <button class="rd-btn rd-btn-large rd-btn-green rd-btn-border">Download</button> </a>
                       </div>
                     </div>
@@ -271,8 +261,7 @@
                 <div class="col-sm-6">
                   <div class="rd-portfolio-item-thumb">
                     <div class="rd-portfolio-item-box" data-aos="zoom-in"></div>
-                    <img src="images/tijolinho.png" alt="Tijolinho" title="Tijolinho" data-aos="flip-left"
-                      data-aos-offset="300" data-aos-delay="300" />
+                    <img src="images/tijolinho.png" alt="Tijolinho" title="Tijolinho" data-aos="flip-left" data-aos-offset="300" data-aos-delay="300" />
 
                   </div>
                 </div>
