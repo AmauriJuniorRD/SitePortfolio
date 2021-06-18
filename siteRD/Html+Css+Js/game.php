@@ -54,9 +54,6 @@ protect();
       <a href="https://www.instagram.com/reborn_dream_sd/?hl=da" target="_blank" class="rd-social">
         <img src="images/icon-instagram.svg" alt="Instagram" />
       </a>
-      <a href="#" class="rd-social">
-        <img src="images/icon-twitter.svg" alt="Twiter" />
-      </a>
       <a href="https://www.facebook.com/reborndreamSD" target="_blank" class="rd-social">
         <img src="images/face.svg" alt="Facebook" />
       </a>
@@ -156,6 +153,12 @@ protect();
       </div>
     </form>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/anime.js"></script>
+
   </body>
 
 </html>
