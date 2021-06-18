@@ -674,6 +674,17 @@ p, label {
 
 /*Botoes*/
 
+.rd-btn-logout {
+  height: 25px;
+  line-height: 16px;
+  padding: 0 20px;
+  border-radius: 14px;
+  font-size: 20px;
+  border: none;
+  float: right;
+  margin: 45px;
+}
+
 .rd-btn-block {
   display: block;
   width: 100%;
@@ -780,7 +791,6 @@ p, label {
   transform: scale(1.1);
 }
 /*Classes Utilitarias*/
-
 .rd-title {
   font-family: 'Abril fatface', serif;
   font-weight: normal;
