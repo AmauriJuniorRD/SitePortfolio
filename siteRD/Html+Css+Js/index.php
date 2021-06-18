@@ -28,8 +28,8 @@ $u = new Usuario();
         <h1 class="rd-text-green rd-text-aling">Entrar</h1>
         <form class="rd-form " method="POST">
 
-          <input class="rd-btn rd-btn-large rd-btn-border" type="email" name="email" placeholder="Usuário">
-          <input class="rd-btn rd-btn-large  rd-btn-border" type="password" name="senha" placeholder="Senha">
+          <input class="rd-btn rd-btn-large rd-btn-border" type="email" name="email" placeholder="Usuário" required>
+          <input class="rd-btn rd-btn-large  rd-btn-border" type="password" name="senha" placeholder="Senha" required>
           <input class="rd-btn rd-btn-large rd-btn-green rd-btn-border" type="submit" value="ACESSAR">
           <p class=" rd-text-light rd-text-aling"> Ainda não está casdastrado? <a class=" rd-text-light rd-text-decoration " href="cadastrar.php"><strong class=" rd-text-green">Cadastre-se</strong></a></p>
 
@@ -55,14 +55,9 @@ $u = new Usuario();
         } else {
           echo "Error: " . $u->msgError;
         }
-      } else {
-        echo "Senha e confirmar senha não correspondem";
       }
-    } else {
-
-      echo "Email já cadastrado";
     }
-  }
+    }
 
 
   ?>
