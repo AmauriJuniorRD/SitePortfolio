@@ -1,3 +1,8 @@
+<?php
+include("protect.php");
+protect();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,24 +33,25 @@
       <img src="images/logo.svg" alt="logo Reborn Dream" />
     </div>
     <nav class="rd-menu">
-      <a href="home.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="equipe.html">Equipe</a>
+      <a href="home.php">Home</a>
+      <a href="sobre.php">Sobre</a>
+      <a href="projetos.php">Projetos</a>
+      <a href="equipe.php">Equipe</a>
       <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
 
+    <nav> <a href="logout.php" class="rd-text-decoration"> <button class="rd-btn rd-btn-logout rd-btn-red ">Logout</button> </a></nav>
+
     <nav class="rd-menu-mob">
-      <a href="home.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="equipe.html">Equipe</a>
+      <a href="home.php">Home</a>
+      <a href="sobre.php">Sobre</a>
+      <a href="projetos.php">Projetos</a>
+      <a href="equipe.php">Equipe</a>
       <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
   </header>
-
 
   <div class="rd-contact-info rd-bg-black rd-text-light">
     <div class="rd-contact-info-inner">
@@ -88,8 +94,7 @@
 
             <div class="row rd-mar-top-15">
               <div class="col-sm-12 col-md-6">
-                <a href="orcamento.php" class="rd-text-decoration"> <button
-                    class="rd-btn rd-btn-large rd-btn-green rd-btn-block">Orçamento</button> </a>
+                <a href="orcamento.php" class="rd-text-decoration"> <button class="rd-btn rd-btn-large rd-btn-green rd-btn-block">Orçamento</button> </a>
               </div>
             </div>
 
@@ -122,9 +127,7 @@
 
             <div class="row rd-mar-top-15">
               <div class="col-sm-12 col-md-6">
-                <a href="https://www.vakinha.com.br/vaquinha/compra-de-equipamentos-luiz-claudio-francisco-olegario"
-                  target="_blank" class="rd-text-decoration"> <button
-                    class="rd-btn rd-btn-large rd-btn-green rd-btn-block">Apoie</button> </a>
+                <a href="https://www.vakinha.com.br/vaquinha/compra-de-equipamentos-luiz-claudio-francisco-olegario" target="_blank" class="rd-text-decoration"> <button class="rd-btn rd-btn-large rd-btn-green rd-btn-block">Apoie</button> </a>
               </div>
             </div>
 
@@ -152,8 +155,7 @@
 
             <div class="row rd-mar-top-15">
               <div class="col-sm-12 col-md-6">
-                <a href="vendagame.php" class="rd-text-decoration"> <button
-                    class="rd-btn rd-btn-large rd-btn-green rd-btn-block">Vamos
+                <a href="vendagame.php" class="rd-text-decoration"> <button class="rd-btn rd-btn-large rd-btn-green rd-btn-block">Vamos
                     Conversar</button> </a>
               </div>
             </div>
