@@ -60,9 +60,6 @@ protect();
         <a href="https://www.instagram.com/reborn_dream_sd/?hl=da" target="_blank" class="rd-social">
           <img src="images/icon-instagram.svg" alt="Instagram" />
         </a>
-        <a href="#" class="rd-social">
-          <img src="images/icon-twitter.svg" alt="Twiter" />
-        </a>
         <a href="https://www.facebook.com/reborndreamSD" target="_blank" class="rd-social">
           <img src="images/face.svg" alt="Facebook" />
         </a>
