@@ -1,4 +1,8 @@
 <?php require_once 'amigosgameprocess.php' ?>
+<?php
+include("protect.php");
+protect();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,19 +23,21 @@
     <img src="images/logo.svg" alt="logo Reborn Dream" />
   </div>
   <nav class="rd-menu">
-    <a href="home.html">Home</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="projetos.html">Projetos</a>
-    <a href="equipe.html">Equipe</a>
+    <a href="home.php">Home</a>
+    <a href="sobre.php">Sobre</a>
+    <a href="projetos.php">Projetos</a>
+    <a href="equipe.php">Equipe</a>
     <a href="dev.php">Devs</a>
     <a href="parceria.php">Parcerias</a>
   </nav>
 
+  <nav> <a href="logout.php" class="rd-text-decoration"> <button class="rd-btn rd-btn-logout rd-btn-red ">Logout</button> </a></nav>
+
   <nav class="rd-menu-mob">
-    <a href="home.html">Home</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="projetos.html">Projetos</a>
-    <a href="equipe.html">Equipe</a>
+    <a href="home.php">Home</a>
+    <a href="sobre.php">Sobre</a>
+    <a href="projetos.php">Projetos</a>
+    <a href="equipe.php">Equipe</a>
     <a href="dev.php">Devs</a>
     <a href="parceria.php">Parcerias</a>
   </nav>
