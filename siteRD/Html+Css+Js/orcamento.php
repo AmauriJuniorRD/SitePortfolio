@@ -4,6 +4,11 @@ require_once '../CLASSE/orcagame.php';
 $u = new orcamento();
 ?>
 
+<?php
+include("protect.php");
+protect();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -48,7 +53,7 @@ $u = new orcamento();
             <input class="rd-btn rd-btn-large rd-btn-green rd-btn-border" type="submit" value="Solicitar">
 
           </div>
-          <p class=" rd-text-light rd-text-aling">Já fez seu solicitamento? <a class=" rd-text-light rd-text-decoration " href="home.html">
+          <p class=" rd-text-light rd-text-aling">Já fez seu solicitamento? <a class=" rd-text-light rd-text-decoration " href="home.php">
               <strong class=" rd-text-green">Retornar</strong></a></p>
 
 
