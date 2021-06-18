@@ -132,16 +132,16 @@
         <h2 class=" rd-text-green row justify-content-center">Insira seus dados</h2>
       <?php endif ?>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="nome" value="<?php echo $nome; ?>" placeholder="Nome" maxlength="30" required>
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border rd-teste-crud" type="text" name="nome" value="<?php echo $nome; ?>" placeholder="Nome" maxlength="30" required>
       </div>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="email" name="email" value="<?php echo $email; ?>" placeholder="Email" maxlength="40" required>
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border rd-teste-crud" type="email" name="email" value="<?php echo $email; ?>" placeholder="Email" maxlength="40" required>
       </div>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="vagas" value="<?php echo $vagas; ?>" placeholder="Vagas" maxlength="60" required>
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border rd-teste-crud" type="text" name="vagas" value="<?php echo $vagas; ?>" placeholder="Vagas" maxlength="60" required>
       </div>
       <div class="form-group">
-        <input class=" form-control rd-btn rd-btn-large rd-btn-border" type="text" name="descricao" value="<?php echo $descricao; ?>" placeholder="Descrição" maxlength="200" required>
+        <input class=" form-control rd-btn rd-btn-large rd-btn-border rd-teste-crud" type="text" name="descricao" value="<?php echo $descricao; ?>" placeholder="Descrição" maxlength="200" required>
       </div>
       <div class="form-group">
         <?php
