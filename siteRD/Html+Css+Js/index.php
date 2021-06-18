@@ -51,13 +51,13 @@ $u = new Usuario();
       if ($u->msgError == "") {
 
         if ($u->logar($email, $senha)) {
-          header("location: home.html");
+          header("location: home.php");
         } else {
           echo "Error: " . $u->msgError;
         }
       }
     }
-    }
+  }
 
 
   ?>
