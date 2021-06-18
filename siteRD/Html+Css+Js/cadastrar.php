@@ -24,11 +24,11 @@ $u = new Usuario();
 
         <h1 class="rd-text-green rd-text-aling ">Cadastrar</h1>
         <form class="rd-form" method="POST">
-          <input class="rd-btn rd-btn-large rd-btn-border " type="text" name="nome" placeholder="Nome completo" maxlength="30">
-          <input class="rd-btn rd-btn-large rd-btn-border" type="text" name="telefone" placeholder="Telefone" maxlength="30">
-          <input class="rd-btn rd-btn-large rd-btn-border" type="email" name="email" placeholder="Email" maxlength="40">
-          <input class="rd-btn rd-btn-large  rd-btn-border" type="password" name="senha" placeholder="Senha" maxlength="15">
-          <input class="rd-btn rd-btn-large  rd-btn-border" type="password" name="confSenha" placeholder="Confirmar Senha" maxlength="15">
+          <input class="rd-btn rd-btn-large rd-btn-border " type="text" name="nome" placeholder="Nome completo" maxlength="30" required>
+          <input class="rd-btn rd-btn-large rd-btn-border" type="text" name="telefone" placeholder="Telefone" maxlength="30" required>
+          <input class="rd-btn rd-btn-large rd-btn-border" type="email" name="email" placeholder="Email" maxlength="40" required>
+          <input class="rd-btn rd-btn-large  rd-btn-border" type="password" name="senha" placeholder="Senha" maxlength="15" required>
+          <input class="rd-btn rd-btn-large  rd-btn-border" type="password" name="confSenha" placeholder="Confirmar Senha" maxlength="15" required>
           <input class="rd-btn rd-btn-large rd-btn-green rd-btn-border" type="submit" value="Cadastrar">
           <p class=" rd-text-light rd-text-aling">Já se cadastrou? <a class=" rd-text-light rd-text-decoration " href="index.php">
               <strong class=" rd-text-green">Entrar</strong></a></p>
@@ -64,9 +64,7 @@ $u = new Usuario();
     } else {
       echo "Error: " . $u->msgError;
     }
-  } else {
-    echo "Preencha todos os campos";
-  }
+  } 
   ?>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
