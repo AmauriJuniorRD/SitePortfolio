@@ -1,3 +1,8 @@
+<?php
+include("protect.php");
+protect();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,20 +25,21 @@
       <img src="images/logo.svg" alt="logo Reborn Dream" />
     </div>
     <nav class="rd-menu">
-      <a href="home.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="equipe.html">Equipe</a>
+      <a href="home.php">Home</a>
+      <a href="sobre.php">Sobre</a>
+      <a href="projetos.php">Projetos</a>
+      <a href="equipe.php">Equipe</a>
       <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
 
+    <nav> <a href="logout.php" class="rd-text-decoration"> <button class="rd-btn rd-btn-logout rd-btn-red ">Logout</button> </a></nav>
 
     <nav class="rd-menu-mob">
-      <a href="home.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="equipe.html">Equipe</a>
+      <a href="home.php">Home</a>
+      <a href="sobre.php">Sobre</a>
+      <a href="projetos.php">Projetos</a>
+      <a href="equipe.php">Equipe</a>
       <a href="dev.php">Devs</a>
       <a href="parceria.php">Parcerias</a>
     </nav>
@@ -92,12 +98,10 @@
 
                 <div class="rd-contact-info-inner rd-mar-top-30">
                   <div class="rd-social-links-circle rd-mar-bottom-15">
-                    <a class="rd-social rd-bg-dark rd-mar-right-15"
-                      href="https://www.instagram.com/reborn_dream_sd/?hl=da" target="_blank">
+                    <a class="rd-social rd-bg-dark rd-mar-right-15" href="https://www.instagram.com/reborn_dream_sd/?hl=da" target="_blank">
                       <img src="images/icon-instagram.svg" alt="Instagram" />
                     </a>
-                    <a class="rd-social rd-bg-dark rd-mar-right-15" href="https://www.facebook.com/reborndreamSD"
-                      target="_blank">
+                    <a class="rd-social rd-bg-dark rd-mar-right-15" href="https://www.facebook.com/reborndreamSD" target="_blank">
                       <img src="images/face.svg" alt="Facebook" />
                     </a>
                   </div>
