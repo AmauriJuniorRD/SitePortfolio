@@ -37,19 +37,19 @@ protect();
         <form class="rd-form" method="POST">
 
           <div class="col-sm-12 col-md-12 rd-mar-top-15 rd-mar-bottom-15">
-            <input class=" rd-textarea " type="text" name="nome" placeholder="Nome completo" maxlength="30">
+            <input class=" rd-textarea " type="text" name="nome" placeholder="Nome completo" maxlength="30" required>
           </div>
 
           <div class="col-sm-12 col-md-12 rd-mar-top-15 rd-mar-bottom-15">
-            <input class=" rd-textarea" type="text" name="telefone" placeholder="Telefone" maxlength="30">
+            <input class=" rd-textarea" type="text" name="telefone" placeholder="Telefone" maxlength="30" required>
           </div>
 
           <div class="col-sm-12 col-md-12 rd-mar-top-15 rd-mar-bottom-15">
-            <input class=" rd-textarea" type="email" name="email" placeholder="Email" maxlength="40">
+            <input class=" rd-textarea" type="email" name="email" placeholder="Email" maxlength="40" required>
           </div>
 
           <div class="col-sm-12 col-md-12 rd-mar-top-15 rd-mar-bottom-15 ">
-            <input class=" rd-textarea " type="text" name="descricao" placeholder="Faça uma breve descrição do seu game" maxlength="200">
+            <input class=" rd-textarea " type="text" name="descricao" placeholder="Faça uma breve descrição do seu game" maxlength="200" required>
           </div>
 
           <div class="row justify-content-center rd-mar-top-15">
